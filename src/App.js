@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+// import MainNav from './components/mainNavigation'
+// import PendingForm from './components/pendingForm'
+// import NewApplicationForm from './components/newApplicationForm'
+// import LoadingScreen from './components/splash/loadingscreen'
+import Routing from './components/navigation/router'
+import Loginpg from './components/loginpg/login'
+import {
+  HashRouter ,
+  Route,
+  useParams,
+  Router,
+  Redirect
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+    {/* <Navigation/> */}
+      {/* <Route exact path="/:user_id" component={LoadingScreen} /> */}
+      <Route exact path="/" component={Loginpg} />
+      <Route  path="/wis" component={Routing} />
+      {/* <Route path="/pendingform" component={MainNav} />
+      <Route path="/NewApplicationForm" component={NewApplicationForm} /> */}
+    </HashRouter>
   );
 }
 
-export default App;
+export default App; 
