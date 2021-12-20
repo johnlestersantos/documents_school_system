@@ -120,7 +120,7 @@ export default function LoginPg() {
                             marginRight: 5,
                             height: 40
                           }}
-                          className={classes.button}>Login</Button>
+                          className={classes.button}>Logasdasdsin</Button>
                         </div>
                       </div>
                     </CardContent>

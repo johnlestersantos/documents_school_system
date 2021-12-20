@@ -10,7 +10,7 @@ import {
   HashRouter ,
   Route,
   useParams,
-  Router,
+  Router,  
   Redirect
 } from "react-router-dom";
 
